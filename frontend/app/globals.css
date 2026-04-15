@@ -1,0 +1,867 @@
+/* Retail-inspired design system (clean blues, high clarity) */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap");
+
+:root {
+  color-scheme: light;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-display: "Outfit", var(--font-sans);
+
+  --walmart-blue: #0071dc;
+  --walmart-blue-hover: #004f9a;
+  --walmart-blue-soft: #e6f2fc;
+  --spark-yellow: #ffc220;
+  --ink: #2e2f32;
+  --ink-muted: #5f6368;
+  --border: #e3e4e5;
+  --surface: #ffffff;
+  --canvas: #f2f8fd;
+  --shadow-sm: 0 1px 2px rgba(0, 41, 102, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 41, 102, 0.08);
+  --radius: 10px;
+  --radius-pill: 999px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background: var(--canvas);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+/* —— App shell —— */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  padding: 0.75rem 1rem;
+  background: var(--walmart-blue);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+  top: 0;
+  outline: 3px solid var(--spark-yellow);
+  outline-offset: 2px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Two-tier header (utility strip + primary nav) */
+.site-chrome-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0, 30, 80, 0.12);
+}
+
+.utility-bar {
+  background: #003d7a;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.78rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.utility-bar__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.45rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.utility-bar__msg {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  line-height: 1.35;
+}
+
+.utility-bar__spark {
+  color: var(--spark-yellow);
+  font-size: 0.65rem;
+}
+
+.utility-bar__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  flex-wrap: wrap;
+}
+
+.utility-bar__link {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+
+.utility-bar__link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.primary-header {
+  background: linear-gradient(180deg, #0071dc 0%, #0064c2 100%);
+  color: #fff;
+}
+
+.primary-header__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.65rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.primary-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.primary-brand__spark {
+  color: var(--spark-yellow);
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.primary-brand__wordmark {
+  white-space: nowrap;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.primary-nav__link {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--radius-pill);
+  transition: background 0.15s, color 0.15s;
+}
+
+.primary-nav__link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.primary-nav__link--active {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+.primary-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.status-pill__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #6ee7a8;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35);
+}
+
+/* —— Footer —— */
+.site-footer {
+  margin-top: auto;
+  background: #f0f4f8;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer__main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.25rem 1.5rem 2rem;
+}
+
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.75rem 2rem;
+}
+
+.site-footer__heading {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  margin: 0 0 0.75rem;
+}
+
+.site-footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.site-footer__list a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.site-footer__list a:hover {
+  color: var(--walmart-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site-footer__muted {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  line-height: 1.45;
+}
+
+.site-footer__col--brand {
+  grid-column: span 1;
+}
+
+@media (min-width: 900px) {
+  .site-footer__col--brand {
+    grid-column: span 1;
+    max-width: 280px;
+    margin-left: auto;
+  }
+}
+
+.site-footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.site-footer__logo-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--walmart-blue);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.site-footer__logo-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.site-footer__blurb {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+
+.site-footer__legal {
+  background: #e4eaf1;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer__legal-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+@media (min-width: 720px) {
+  .site-footer__legal-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.site-footer__legal-inner p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+}
+
+.site-footer__legal-links {
+  opacity: 0.9;
+}
+
+/* —— Collapsible filters —— */
+.filter-panel__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.filter-panel .panel__title {
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.filter-panel__title-row {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-panel__meta {
+  margin: 0.35rem 0 0;
+}
+
+.filter-panel__count-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--spark-yellow);
+  color: #5c4200;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+}
+
+.filter-panel__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--walmart-blue);
+  background: var(--walmart-blue-soft);
+  border: 2px solid var(--walmart-blue);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.filter-panel__toggle:hover {
+  background: var(--walmart-blue);
+  color: #fff;
+}
+
+.filter-panel__chevron {
+  transition: transform 0.25s ease;
+}
+
+.filter-panel__chevron--open {
+  transform: rotate(180deg);
+}
+
+.filter-panel__collapsible {
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.filter-panel__collapsible[data-expanded="false"] {
+  pointer-events: none;
+}
+
+.filter-panel__collapsible-inner {
+  padding-top: 1rem;
+}
+
+.filter-panel.filter-panel {
+  padding-bottom: 1rem;
+}
+
+/* —— Main content —— */
+.page-main {
+  flex: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 3rem;
+  width: 100%;
+}
+
+#upload,
+#filters,
+#gallery,
+#main-content {
+  scroll-margin-top: 7.5rem;
+}
+
+.page-hero {
+  margin-bottom: 1.5rem;
+}
+
+.page-hero h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin: 0 0 0.35rem;
+  line-height: 1.2;
+}
+
+.page-hero p {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  max-width: 52ch;
+}
+
+/* —— Panels —— */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.panel__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ink);
+  margin: 0 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.panel__title-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--walmart-blue-soft);
+  color: var(--walmart-blue-hover);
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+}
+
+/* —— Form controls —— */
+.field-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.field-grid--upload {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .field-grid--upload {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field--full {
+  grid-column: 1 / -1;
+}
+
+.field__label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+}
+
+.input,
+.select,
+.textarea {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fafbfc;
+  color: var(--ink);
+  width: 100%;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.input:hover,
+.select:hover,
+.textarea:hover {
+  border-color: #c5c7c9;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--walmart-blue);
+  box-shadow: 0 0 0 3px rgba(0, 113, 220, 0.2);
+  background: var(--surface);
+}
+
+.textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+
+.file-field {
+  position: relative;
+}
+
+.file-field input[type="file"] {
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  background: var(--walmart-blue-soft);
+  cursor: pointer;
+  width: 100%;
+}
+
+.file-field input[type="file"]::file-selector-button {
+  margin-right: 0.75rem;
+  padding: 0.45rem 0.9rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--walmart-blue);
+  color: #fff;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+.file-field input[type="file"]::file-selector-button:hover {
+  background: var(--walmart-blue-hover);
+}
+
+/* —— Buttons —— */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.btn {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-pill);
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn--primary {
+  background: var(--walmart-blue);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 113, 220, 0.35);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: var(--walmart-blue-hover);
+}
+
+.btn--secondary {
+  background: var(--surface);
+  color: var(--walmart-blue);
+  border: 2px solid var(--walmart-blue);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background: var(--walmart-blue-soft);
+}
+
+/* —— Filters —— */
+.filter-panel .filter-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.filter-panel .filter-search {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 900px) {
+  .filter-panel .filter-search {
+    grid-column: span 2;
+  }
+}
+
+.filter-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: flex-end;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0.35rem;
+}
+
+.muted {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+/* —— Gallery —— */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.gallery-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--ink-muted);
+}
+
+.product-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.product-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.product-card__media {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background: #e8eaed;
+  overflow: hidden;
+}
+
+.product-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card__badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--walmart-blue-hover);
+  box-shadow: var(--shadow-sm);
+}
+
+.product-card__badge--pending {
+  color: #9a6700;
+  background: #fff8e6;
+}
+
+.product-card__badge--failed {
+  color: #8b1538;
+  background: #fdecef;
+}
+
+.product-card__body {
+  padding: 1rem 1.1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.product-card__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0;
+  color: var(--ink);
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.product-card__title-meta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+}
+
+.product-card__desc {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-card__meta {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.product-card__meta strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.product-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.chip {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--walmart-blue-soft);
+  color: var(--walmart-blue-hover);
+}
+
+.chip--designer {
+  background: #fff8e6;
+  color: #7a5a00;
+}
+
+.product-card__error {
+  font-size: 0.8rem;
+  color: #8b1538;
+  margin: 0;
+  padding: 0.35rem 0.5rem;
+  background: #fdecef;
+  border-radius: 6px;
+}
+
+.annotation-box {
+  margin-top: 0.35rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.annotation-box__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-muted);
+  margin-bottom: 0.4rem;
+}
+
+.annotation-box .input,
+.annotation-box .textarea {
+  font-size: 0.85rem;
+}
+
+.annotation-box .btn {
+  width: 100%;
+  margin-top: 0.35rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
