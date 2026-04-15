@@ -15,7 +15,7 @@ from app.api.routes import router
 from app.core.config import settings
 from app.db.init_db import initialize_database
 from app.schemas.library import InspirationImage
-from app.services.classifier_service import get_image_classifier
+from app.services.classifiers.heuristic import HeuristicImageClassifier
 from app.services.library_service import LibraryService
 
 
@@ -38,7 +38,8 @@ async def lifespan(_: FastAPI) -> AsyncIterator[None]:
     if settings.seed_demo_data:
         repository = get_library_repository()
         if not repository.list_items():
-            classifier = get_image_classifier()
+            # Seed uses heuristic only so startup never depends on OpenAI (rate limits, keys, network).
+            classifier = HeuristicImageClassifier()
             demo_id = classifier.next_id()
             description, attributes = classifier.classify_image(
                 image_bytes=b"",

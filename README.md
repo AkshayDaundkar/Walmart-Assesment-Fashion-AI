@@ -48,6 +48,8 @@ See `backend/.env.example`. Important variables:
 
 ## Local run
 
+Run the API and UI on your machine only (`127.0.0.1` / `localhost`); no cloud deploy is required for the case study.
+
 ### 1. Environment files
 
 **Backend** — copy and edit (paths assume you start the API from the `backend/` directory):

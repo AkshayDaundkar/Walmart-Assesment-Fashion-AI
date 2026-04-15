@@ -13,12 +13,14 @@ backend/.ruff_cache
 
 # Runtime data
 backend/data/
-backend/backend/data/
+backend/backend/
 *.db
 
-# Env
+# Env (never commit secrets)
 .env
 *.env
+backend/.env
+frontend/.env
 frontend/.env.local
 
 # OS
