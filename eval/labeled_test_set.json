@@ -1,0 +1,602 @@
+[
+  {
+    "file_name": "sample_000_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_001_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_002_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_003_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_004_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_005_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_006_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_007_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_008_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_009_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_010_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_011_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_012_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_013_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_014_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_015_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_016_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_017_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_018_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_019_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_020_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_021_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_022_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_023_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_024_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_025_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_026_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_027_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_028_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_029_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_030_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_031_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_032_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_033_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_034_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_035_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_036_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_037_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_038_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_039_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_040_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_041_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_042_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_043_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_044_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_045_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_046_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_047_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_048_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_049_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_050_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_051_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_052_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_053_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_054_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_055_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  },
+  {
+    "file_name": "sample_056_japan_jacket.jpg",
+    "expected": {
+      "garment_type": "Jacket",
+      "style": "Contemporary street",
+      "material": "Wool",
+      "occasion": "Runway",
+      "country": "Japan"
+    }
+  },
+  {
+    "file_name": "sample_057_india_top.jpg",
+    "expected": {
+      "garment_type": "Top",
+      "style": "Contemporary ethnic",
+      "material": "Cotton blend",
+      "occasion": "Daywear",
+      "country": "India"
+    }
+  },
+  {
+    "file_name": "sample_058_milan_dress.jpg",
+    "expected": {
+      "garment_type": "Dress",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Runway",
+      "country": "Italy"
+    }
+  },
+  {
+    "file_name": "sample_059_paris_skirt.jpg",
+    "expected": {
+      "garment_type": "Skirt",
+      "style": "Bohemian",
+      "material": "Linen",
+      "occasion": "Daywear",
+      "country": "France"
+    }
+  }
+]
